@@ -1,0 +1,55 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	
+}
+.loadercont{
+	width: 100%;
+	height: 100vh;
+	background: green;
+}
+.loader{
+	position: absolute;
+	top:45%;
+	left: 45%;
+	transform: translate(-50,-50);
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+.obj{
+	width: 5px;
+	height: 40px;
+	background: white;
+	margin: 0 4px;
+	animation: loading 0.8s infinite;
+}
+.obj:nth-child(2){
+	animation-delay: 0.1s;
+}
+.obj:nth-child(3){
+	animation-delay: 0.2s;
+}
+.obj:nth-child(4){
+	animation-delay: 0.3s;
+}
+.obj:nth-child(5){
+	animation-delay: 0.4s;
+}
+.obj:nth-child(6){
+	animation-delay: 0.5s;
+}
+@keyframes loading{
+	0%{
+		height:0px;
+	}
+	50%{
+		height: 40px;
+	}
+	100%{
+		height: 0px;
+	}
+
+}
